@@ -34,4 +34,6 @@ changeBtn.addEventListener("click", function () {
     }
     changeBtn.style.backgroundImage =
         "url('/images/competitive-shitting-shitting.gif')";
+    document.body.style.backgroundImage =
+        "url('/images/competitive-shitting-shitting.gif')";
 });
