@@ -1,0 +1,92 @@
+/*Fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: url(/images/back.jpg);
+    -webkit-animation: scrolling 100s linear infinite;
+    -moz-animation: scrolling 100s linear infinite;
+    -o-animation: scrolling 100s linear infinite;
+    animation: scrolling 100s linear infinite;
+}
+
+@-webkit-keyframes scrolling {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100vw 100vh;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-size: 4em;
+    padding: 0.5em;
+}
+
+figcaption {
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 0.3em;
+    border: black solid 1px;
+}
+/*Grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns in the top row */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 1.5em;
+    margin: 1em;
+}
+/*Thumbnails*/
+.thumbs {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+}
+
+/*buttons*/
+#buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#changeButton {
+    width: 240px;
+    height: 160px;
+    color: yellow;
+    background-color: green;
+    border-radius: 1em;
+}
+#changeButton:hover {
+    background-color: coral;
+    transition: 0.5s;
+}
