@@ -5,6 +5,7 @@ Jenna Deamer - 200529678
 
 // Getting html elements
 let thumbnails = document.getElementsByClassName("thumbs");
+let list = document.querySelector("#grid-container");
 let mainimg = document.querySelector("#bigthumb");
 let caption = document.querySelector("#bigthumbcaption");
 let changeBtn = document.querySelector("#changeButton");
@@ -16,6 +17,7 @@ let flowerCaptions = {
     flow4: "Narcissus, also known as daffodils, have long been a muse for poets, inspiring them with their vibrant yellow blooms and delicate fragrance, symbolizing renewal, rebirth, and the fleeting beauty of life.",
     flow5: "Sunflowers are heliotropic plants, meaning they can track and follow the movement of the sun across the sky.",
 };
+
 for (var i = 0; i < thumbnails.length; i++) {
     thumbnails[i].addEventListener("click", function () {
         mainimg.src = this.src.replace("small", "large");

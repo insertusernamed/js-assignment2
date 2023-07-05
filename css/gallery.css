@@ -54,10 +54,17 @@ figure {
     justify-content: center;
     align-items: center;
 }
-img {
+
+.thumbs {
+    filter: grayscale(1);
     border-radius: 0.3em;
     border: black solid 1px;
 }
+
+li:first-child img {
+    filter: grayscale(0);
+}
+
 /*Grid*/
 .grid-container {
     display: grid;
@@ -66,10 +73,15 @@ img {
     gap: 1.5em;
     margin: 1em;
 }
+
 /*Thumbnails*/
 .thumbs {
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
+    width: 100%;
+    height: auto;
+}
+
+.bigthumb {
+    transition: 0.5s;
 }
 
 /*buttons*/
